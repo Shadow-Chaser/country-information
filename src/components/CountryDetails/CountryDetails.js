@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
+import './CountryDetails.css'
 
 const CountryDetails = () => {
     const {countryName} = useParams()
@@ -18,12 +19,25 @@ const CountryDetails = () => {
     }, [])
     
    
-    const {name, capital, region} = countryDetails;
+    const {name, capital, region, subregion, population, area, timezones, nativeName} = countryDetails;
+    const borders = countryDetails.borders;
+   console.log(borders);
     return (
-        <div>
-            <h1>Name: {name}</h1>
-            <h3>Capital: {capital}</h3>
-            <h3>Region: {region}</h3>
+        <div className='country-detail-container'>
+            <h3>Name: {name}</h3>
+            <p>Native Name: {nativeName}</p>
+            <p>Capital: {capital}</p>
+            <p>Population: {population}</p>
+            <p>Area: {area} km<sup>2</sup></p>
+            <p>Timezones: {timezones}</p>
+
+            <p>Borders: {borders.map(border => <li>{border}</li>)}</p> 
+
+          
+
+            <p>Region: {region}</p>
+            <p>Sub-Region: {subregion}</p>
+
 
             
 
