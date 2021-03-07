@@ -31,7 +31,7 @@ const CountryDetails = () => {
             <p>Area: {area} km<sup>2</sup></p>
             <p>Timezones: {timezones}</p>
 
-            <p>Borders: {borders.map(border => <li>{border}</li>)}</p> 
+            {/* <p>Borders: {borders.map(border => <li>{border}</li>)}</p>  */}
 
           
 
