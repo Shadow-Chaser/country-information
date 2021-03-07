@@ -1,0 +1,9 @@
+.country{
+    margin: 15px;
+    width: 350px;
+    display: inline-block;
+}
+
+.link{
+    text-decoration: none;
+}

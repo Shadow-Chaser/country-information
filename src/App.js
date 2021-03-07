@@ -5,12 +5,13 @@ import {
   Switch,
   Route,
 } from "react-router-dom";
+
 import NotFound from './components/NotFound/NotFound';
 import CountryDetails from './components/CountryDetails/CountryDetails';
 
 function App() {
   return (
-    <div className="App">
+    <div>
 
       <Router>
 
