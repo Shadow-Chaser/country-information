@@ -4,9 +4,9 @@ import {
   BrowserRouter as Router,
   Switch,
   Route,
-  Link
 } from "react-router-dom";
 import NotFound from './components/NotFound/NotFound';
+import CountryDetails from './components/CountryDetails/CountryDetails';
 
 function App() {
   return (
@@ -18,6 +18,10 @@ function App() {
 
           <Route path='/home'>
             <Home></Home>
+          </Route>
+
+          <Route path='/country/:countryName'>
+           <CountryDetails></CountryDetails>
           </Route>
 
           <Route exact path='/'>

@@ -1,11 +1,15 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Country = (props) => {
     const {name} = props.country;
+    // console.log(name);
     return (
-        <div className>
+        <div>
             <h3>{name}</h3>
-            <button>Get Details</button>
+            <Link to={`/country/${name}`}>
+                <button>Get Details</button>
+            </Link>
         </div>
     );
 };

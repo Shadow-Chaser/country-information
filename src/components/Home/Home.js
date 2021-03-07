@@ -16,7 +16,7 @@ const Home = () => {
 
             <div>
             {
-                countries.map(country=> <Country country={country}></Country>)
+                countries.map(country=> <Country country={country} key={country.alpha2Code}></Country>)
             }
             </div>
 
